@@ -27,8 +27,6 @@ ActiveRecord::Schema.define(version: 3) do
     t.integer "price"
     t.string "image_url"
     t.string "size"
-    t.datetime "created_at"
-    t.datetime "updated_at"
   end
 
   create_table "haunted_houses", force: :cascade do |t|
@@ -36,10 +34,8 @@ ActiveRecord::Schema.define(version: 3) do
     t.string "location"
     t.string "theme"
     t.integer "price"
-    t.boolean "family_friendly"
-    t.datetime "opening_date"
-    t.datetime "closing_date"
-    t.text "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end
