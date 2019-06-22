@@ -31,4 +31,13 @@ ActiveRecord::Schema.define(version: 3) do
     t.datetime "updated_at"
   end
 
+  create_table "haunted_houses", force: :cascade do |t|
+    t.string "name"
+    t.string "location"
+    t.string "theme"
+    t.integer "price"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
 end
